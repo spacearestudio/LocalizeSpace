@@ -1,6 +1,6 @@
 import { ArrowRight, Check } from 'lucide-react';
 
-const highlights = ['No credit card required', '14-day free trial', 'Cancel anytime'];
+const highlights = ['무료', '엔제든지 취소 가능', '지속적인 서포트'];
 
 export function Hero() {
   return (
@@ -14,17 +14,16 @@ export function Hero() {
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-green/20 border border-brand-green/40 text-sm text-slate-700">
             <span className="w-2 h-2 rounded-full bg-brand-green" />
-            Now in public beta
+            프로토타입
           </span>
         </div>
 
         <h1 className="animate-fade-up mt-6 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          The workspace your team will actually enjoy using
+          영어권 고객님들도 우리 가게로!
         </h1>
 
         <p className="animate-fade-up mt-6 text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
-          Nimbus brings your projects, docs, and conversations together in one
-          fast, beautifully designed platform built for modern teams.
+          국내 고객들분만 아니라 영어권 고객님들도 우리 가게로! 유행 해외 플랫폼 등록 부터, 웹사이트 제작, SNS 마케팅까지 다 지금 바로 시작해보세요!
         </p>
 
         <div className="animate-fade-up mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -32,14 +31,8 @@ export function Hero() {
             href="#"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 font-medium hover:opacity-90 transition-opacity group"
           >
-            Start for free
+           체험하기
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </a>
-          <a
-            href="#features"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-brand-blue/40 text-slate-700 font-medium hover:bg-brand-blue/10 transition-colors"
-          >
-            See features
           </a>
         </div>
 
@@ -53,6 +46,7 @@ export function Hero() {
         </div>
 
         {/* Product preview card */}
+        {/*
         <div className="animate-fade-in mt-16 max-w-5xl mx-auto">
           <div className="rounded-2xl border border-slate-200 shadow-2xl shadow-slate-200/50 overflow-hidden">
             <div className="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center gap-2">
@@ -79,6 +73,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+        */}
       </div>
     </section>
   );

@@ -29,14 +29,10 @@ export function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-blue to-brand-green flex items-center justify-center">
                 <Globe className="w-5 h-5 text-slate-900" />
               </div>
-              Nimbus
+              LocalizeSpace
             </a>
-            <p className="mt-4 text-sm text-slate-500 max-w-xs leading-relaxed">
-              The workspace your team will actually enjoy using. Built for
-              speed, designed for everyone.
-            </p>
           </div>
-
+        {/*
           {columns.map((col) => (
             <div key={col.title}>
               <h4 className="text-sm font-semibold text-slate-900">{col.title}</h4>
@@ -54,16 +50,15 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        */}
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} Nimbus, Inc. All rights reserved.
+            © {new Date().getFullYear()} LocalizeSpace, Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-4 text-sm text-slate-400">
-            <a href="#" className="hover:text-slate-600 transition-colors">Twitter</a>
             <a href="#" className="hover:text-slate-600 transition-colors">GitHub</a>
-            <a href="#" className="hover:text-slate-600 transition-colors">LinkedIn</a>
           </div>
         </div>
       </div>

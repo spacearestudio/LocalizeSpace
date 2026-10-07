@@ -13,17 +13,16 @@ export function CTA() {
 
           <div className="relative z-10">
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">
-              Ready to get started?
+              글로벌 진출 지금 시작하세요!
             </h2>
             <p className="mt-4 text-slate-700 max-w-lg mx-auto leading-relaxed">
-              Join thousands of teams already building faster with Nimbus. Set
-              up takes less than two minutes.
+              국내분만 아니라 해외 고객들까지 잡아서 매출 업!
             </p>
             <a
               href="#"
               className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition-colors group"
             >
-              Start for free
+              무료로 시작하기
               <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>

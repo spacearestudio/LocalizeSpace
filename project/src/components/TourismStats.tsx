@@ -3,36 +3,36 @@ import { TrendingUp, Users, Globe2, Plane } from 'lucide-react';
 const stats = [
   {
     icon: Users,
-    value: '18.9M',
-    label: 'International visitors in 2025',
-    sub: 'New all-time high, surpassing 2019 by 8.2%',
+    value: '2025년',
+    label: '국제 관광객 1,890만',
+    sub: '2019 전 사상 최대 보다 8.2% 증가',
   },
   {
     icon: TrendingUp,
     value: '+8.2%',
-    label: 'Growth vs. pre-pandemic peak',
-    sub: 'Structural expansion beyond recovery',
+    label: '지속적인 성장',
+    sub: '코라나 관광 수치 회복 이후 지속적인 성장세',
   },
   {
     icon: Globe2,
     value: '+45.8%',
-    label: 'Growth from the Americas',
-    sub: 'Long-haul markets surging',
+    label: '영미권 관심 상승',
+    sub: '아시아뿐만 아니라 영미권도',
   },
   {
     icon: Plane,
     value: '29.6M',
-    label: 'Korean outbound trips in 2025',
-    sub: 'Record number of Koreans traveling abroad',
+    label: '2025년 한국인 해외 여행객',
+    sub: '국내만 아니라 글로벌에 시대',
   },
 ];
 
 const topCountries = [
-  { rank: 1, country: 'China', visitors: '5.48M', share: 29, note: 'Largest source market, ~90% of 2019 level' },
-  { rank: 2, country: 'Japan', visitors: '3.65M', share: 19, note: '+11.7% above pre-pandemic figure' },
-  { rank: 3, country: 'Taiwan', visitors: '1.80M', share: 10, note: 'Steady recovery from Asian market' },
-  { rank: 4, country: 'United States', visitors: '1.65M', share: 9, note: 'Strong long-haul growth' },
-  { rank: 5, country: 'Hong Kong', visitors: '1.20M', share: 6, note: 'Continuing post-pandemic rebound' },
+  { rank: 1, country: '중국', visitors: '5.48M', share: 29, note: '2019 최고 수치에 비해 10% 인하' },
+  { rank: 2, country: '일본', visitors: '3.65M', share: 19, note: '코로나19 전 보다 +11.7% 인상' },
+  { rank: 3, country: '대만', visitors: '1.80M', share: 10, note: '아시아 시장에서 지속적인 회복세' },
+  { rank: 4, country: '미국', visitors: '1.65M', share: 9, note: '영미권 관심 상승' },
+  { rank: 5, country: '홍콩', visitors: '1.20M', share: 6, note: '홍콩인 58.7% 영어 유창' },
 ];
 
 export function TourismStats() {
@@ -41,14 +41,12 @@ export function TourismStats() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-sm font-medium text-brand-green/80">Tourism Insights</span>
+          <span className="text-sm font-medium text-brand-green/80">관광 통계</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
-            South Korea tourism is surging
+            관광은 산업은 계속 성장하고 있어요! <br className="hidden sm:block" />
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
-            Inbound arrivals hit a record 18.9 million in 2025, breaking the
-            pre-pandemic high and signaling sustained structural growth across
-            both Asian and long-haul markets.
+            2025년 해외 입국객은 사상 최대인 1,890만 명을 기록하며 코로나19 이전 최고치를 넘어서 전반적으로 아시아 및 영미권으로 부터 한국 관광산업에 지속적인 성장을 보여주고 있어요.
           </p>
         </div>
 
@@ -72,7 +70,7 @@ export function TourismStats() {
         {/* Top 5 countries list */}
         <div className="mt-16 max-w-3xl mx-auto">
           <h3 className="text-lg font-semibold text-center">
-            Top 5 source countries for inbound visitors
+            국제 관광객 TOP 5 국가 (2025년 기준)
           </h3>
           <div className="mt-8 space-y-3">
             {topCountries.map((c) => (
@@ -114,8 +112,7 @@ export function TourismStats() {
             ))}
           </div>
           <p className="mt-6 text-center text-xs text-slate-400">
-            Source: Korea Ministry of Culture, Sports and Tourism (MCST) & Korea
-            Tourism Organization (KTO), 2025 data via Yanolja Research.
+            자료 출처: 문화체육관광부(MCST)·한국관광공사(KTO), 야놀자리서치(Yanolja Research), 2025년 데이터.
           </p>
         </div>
       </div>

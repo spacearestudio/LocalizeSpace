@@ -14,7 +14,6 @@ function App() {
         <Hero />
         <Features />
         <TourismStats />
-        <Pricing />
         <CTA />
       </main>
       <Footer />
