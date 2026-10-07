@@ -7,13 +7,13 @@ export function Hero() {
     <section className="relative pt-32 pb-24 overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-sky-100 to-transparent rounded-full blur-3xl opacity-60" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-brand-blue/40 to-brand-green/30 rounded-full blur-3xl opacity-70" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="animate-fade-up">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-sm text-slate-600">
-            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-green/20 border border-brand-green/40 text-sm text-slate-700">
+            <span className="w-2 h-2 rounded-full bg-brand-green" />
             Now in public beta
           </span>
         </div>
@@ -30,14 +30,14 @@ export function Hero() {
         <div className="animate-fade-up mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
             href="#"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 transition-colors group"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 font-medium hover:opacity-90 transition-opacity group"
           >
             Start for free
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
             href="#features"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-brand-blue/40 text-slate-700 font-medium hover:bg-brand-blue/10 transition-colors"
           >
             See features
           </a>
@@ -46,7 +46,7 @@ export function Hero() {
         <div className="animate-fade-in mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           {highlights.map((h) => (
             <div key={h} className="flex items-center gap-1.5 text-sm text-slate-500">
-              <Check className="w-4 h-4 text-emerald-500" />
+              <Check className="w-4 h-4 text-brand-green" />
               {h}
             </div>
           ))}
@@ -65,9 +65,9 @@ export function Hero() {
             <div className="bg-white p-8 sm:p-12">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {[
-                  { label: 'Active projects', value: '128', color: 'bg-sky-500' },
-                  { label: 'Team members', value: '42', color: 'bg-emerald-500' },
-                  { label: 'Completed tasks', value: '1,937', color: 'bg-amber-500' },
+                  { label: 'Active projects', value: '128', color: 'bg-brand-blue' },
+                  { label: 'Team members', value: '42', color: 'bg-brand-green' },
+                  { label: 'Completed tasks', value: '1,937', color: 'bg-brand-blue/60' },
                 ].map((stat) => (
                   <div key={stat.label} className="rounded-xl border border-slate-100 p-5">
                     <div className={`w-10 h-10 rounded-lg ${stat.color} opacity-80 mb-4`} />

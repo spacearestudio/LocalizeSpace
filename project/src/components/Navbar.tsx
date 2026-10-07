@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Layers, Menu, X } from 'lucide-react';
+import { Globe, Menu, X } from 'lucide-react';
 
 const links = [
   { label: 'Features', href: '#features' },
@@ -28,8 +28,8 @@ export function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 font-semibold text-lg">
-          <div className="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center">
-            <Layers className="w-5 h-5 text-white" />
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-blue to-brand-green flex items-center justify-center">
+            <Globe className="w-5 h-5 text-slate-900" />
           </div>
           <span>Nimbus</span>
         </a>
@@ -55,7 +55,7 @@ export function Navbar() {
           </a>
           <a
             href="#"
-            className="text-sm font-medium px-4 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800 transition-colors"
+            className="text-sm font-medium px-4 py-2 rounded-lg bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 hover:opacity-90 transition-opacity"
           >
             Get started
           </a>
@@ -89,7 +89,7 @@ export function Navbar() {
               </a>
               <a
                 href="#"
-                className="text-sm font-medium px-4 py-2 rounded-lg bg-slate-900 text-white text-center"
+                className="text-sm font-medium px-4 py-2 rounded-lg bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 text-center hover:opacity-90 transition-opacity"
               >
                 Get started
               </a>

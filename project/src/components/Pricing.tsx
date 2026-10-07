@@ -45,10 +45,10 @@ const plans = [
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-24 border-t border-slate-100 bg-slate-50/50">
+    <section id="pricing" className="py-24 border-t border-slate-100 bg-gradient-to-b from-brand-blue/5 to-transparent">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-sm font-medium text-sky-600">Pricing</span>
+          <span className="text-sm font-medium text-brand-green/80">Pricing</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
             Simple, transparent pricing
           </h2>
@@ -63,20 +63,20 @@ export function Pricing() {
               key={plan.name}
               className={`rounded-2xl p-8 flex flex-col ${
                 plan.highlighted
-                  ? 'bg-slate-900 text-white shadow-2xl shadow-slate-300/50 md:scale-105'
+                  ? 'bg-gradient-to-br from-brand-blue to-brand-green text-slate-900 shadow-2xl shadow-brand-blue/30 md:scale-105'
                   : 'bg-white border border-slate-200'
               }`}
             >
               <div>
                 <h3 className="text-lg font-semibold">{plan.name}</h3>
-                <p className={`mt-1 text-sm ${plan.highlighted ? 'text-slate-300' : 'text-slate-500'}`}>
+                <p className={`mt-1 text-sm ${plan.highlighted ? 'text-slate-700' : 'text-slate-500'}`}>
                   {plan.desc}
                 </p>
               </div>
 
               <div className="mt-6 flex items-baseline gap-1">
                 <span className="text-4xl font-semibold tracking-tight">{plan.price}</span>
-                <span className={`text-sm ${plan.highlighted ? 'text-slate-400' : 'text-slate-500'}`}>
+                <span className={`text-sm ${plan.highlighted ? 'text-slate-600' : 'text-slate-500'}`}>
                   {plan.period}
                 </span>
               </div>
@@ -86,10 +86,10 @@ export function Pricing() {
                   <li key={feat} className="flex items-start gap-2.5 text-sm">
                     <Check
                       className={`w-4 h-4 mt-0.5 flex-shrink-0 ${
-                        plan.highlighted ? 'text-emerald-400' : 'text-emerald-500'
+                        plan.highlighted ? 'text-slate-800' : 'text-brand-green'
                       }`}
                     />
-                    <span className={plan.highlighted ? 'text-slate-200' : 'text-slate-700'}>
+                    <span className={plan.highlighted ? 'text-slate-800' : 'text-slate-700'}>
                       {feat}
                     </span>
                   </li>
@@ -100,8 +100,8 @@ export function Pricing() {
                 href="#"
                 className={`mt-8 inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-medium transition-colors ${
                   plan.highlighted
-                    ? 'bg-white text-slate-900 hover:bg-slate-100'
-                    : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
+                    ? 'bg-slate-900 text-white hover:bg-slate-800'
+                    : 'border border-brand-green/40 text-slate-700 hover:bg-brand-green/10'
                 }`}
               >
                 {plan.cta}
