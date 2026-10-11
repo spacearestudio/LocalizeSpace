@@ -5,20 +5,23 @@ import { TourismStats } from '@/components/TourismStats';
 import { Pricing } from '@/components/Pricing';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
+import { LeadModalProvider } from '@/components/LeadModalProvider';
 
 
 function Home() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
-      <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <TourismStats />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <LeadModalProvider>
+      <div className="min-h-screen bg-white text-slate-900">
+        <Navbar />
+        <main>
+          <Hero />
+          <Features />
+          <TourismStats />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
+    </LeadModalProvider>
   );
 }
 

@@ -1,8 +1,11 @@
 import { ArrowRight, Check } from 'lucide-react';
+import { useLeadModal } from './lead-modal-context';
 
 const highlights = ['무료', '엔제든지 취소 가능', '지속적인 서포트'];
 
 export function Hero() {
+  const { open } = useLeadModal();
+
   return (
     <section className="relative pt-32 pb-24 overflow-hidden">
       {/* Background accent */}
@@ -27,13 +30,14 @@ export function Hero() {
         </p>
 
         <div className="animate-fade-up mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a
-            href="#"
+          <button
+            type="button"
+            onClick={open}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 font-medium hover:opacity-90 transition-opacity group"
           >
            신청하기
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
-          </a>
+          </button>
         </div>
 
         <div className="animate-fade-in mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
