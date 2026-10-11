@@ -1,0 +1,25 @@
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { Features } from '@/components/Features';
+import { TourismStats } from '@/components/TourismStats';
+import { Pricing } from '@/components/Pricing';
+import { CTA } from '@/components/CTA';
+import { Footer } from '@/components/Footer';
+
+
+function Home() {
+  return (
+    <div className="min-h-screen bg-white text-slate-900">
+      <Navbar />
+      <main>
+        <Hero />
+        <Features />
+        <TourismStats />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default Home;

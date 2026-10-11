@@ -19,11 +19,11 @@ export function Hero() {
         </div>
 
         <h1 className="animate-fade-up mt-6 text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight max-w-3xl mx-auto leading-[1.1]">
-          영어권 고객님들도 우리 가게로!
+          영어 고객님들도 우리 가게로!
         </h1>
 
         <p className="animate-fade-up mt-6 text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
-          국내 고객들분만 아니라 영어권 고객님들도 우리 가게로! 유행 해외 플랫폼 등록 부터, 웹사이트 제작, SNS 마케팅까지 다 지금 바로 시작해보세요!
+          국내 고객분만 아니라 영어 고객들도 우리 가게로! 유행 해외 플랫폼 등록 부터, 웹사이트 제작, SNS 마케팅까지 다 해드려요!
         </p>
 
         <div className="animate-fade-up mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -31,7 +31,7 @@ export function Hero() {
             href="#"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-brand-blue to-brand-green text-slate-900 font-medium hover:opacity-90 transition-opacity group"
           >
-           체험하기
+           신청하기
             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>

@@ -43,10 +43,10 @@ export function TourismStats() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium text-brand-green/80">관광 통계</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
-            관광은 산업은 계속 성장하고 있어요! <br className="hidden sm:block" />
+            관광 산업은 계속 성장하고 있어요! <br className="hidden sm:block" />
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
-            2025년 해외 입국객은 사상 최대인 1,890만 명을 기록하며 코로나19 이전 최고치를 넘어서 전반적으로 아시아 및 영미권으로 부터 한국 관광산업에 지속적인 성장을 보여주고 있어요.
+            2025년 해외 입국객은 사상 최대인 1,890만 명을 기록하며 코로나19 이전 최고치를 넘어서 전반적으로 아시아 및 영미권으로 부터 한국 관광산업에 대한 지속적인 관심과 성장을 보여주고 있어요.
           </p>
         </div>
 

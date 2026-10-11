@@ -1,23 +1,13 @@
-import { Navbar } from '@/components/Navbar';
-import { Hero } from '@/components/Hero';
-import { Features } from '@/components/Features';
-import { TourismStats } from '@/components/TourismStats';
-import { Pricing } from '@/components/Pricing';
-import { CTA } from '@/components/CTA';
-import { Footer } from '@/components/Footer';
+import {BrowserRouter,  Routes, Route } from 'react-router-dom';
+import Home from './page/Home';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
-      <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <TourismStats />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

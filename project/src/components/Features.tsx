@@ -9,7 +9,7 @@ const features = [
   {
     icon: Layers,
     title: '웹사이트 제작',
-    desc: '해외에서는 기업 고유 사이트를 통해 상품 설명, 예약, 질문 등 모든걸 한곳에서 편하게 할수 있는게 흔해요, 그래서 저희가 웹사이트 제작부터 관리까지 도와드려요',
+    desc: '국제 고객들이 통합적으로 상품 설명, 예약, 질문 등 모든걸 한곳에서  할수 있게 웹사이트 제작해드려요!'
   },
   {
     icon: CalendarDays,
@@ -19,17 +19,17 @@ const features = [
   {
     icon: BarChart3,
     title: '통계 확인',
-    desc: '영어권 고객님들의 방문 수, 예약 수, 리뷰 수 등 다양한 통계 저희 사이트에서 추척 해드리고 쉽게 확인이 가능해요',
+    desc: '영어권 고객님들의 방문 수, 예약 수, 리뷰 수 등 다양한 통계를 저희가 추척해서 알려드려요',
   },
   {
     icon: Hash,
     title: 'SNS 전환',
-    desc: '기본 존재하신 SNS 계정을 저희가 영어권 고객님들이 쉽게 접근할 수 있도록 계정 생선 부터 마케팅까지 해드려요',
+    desc: '기본 존재하신 SNS 계정을 저희가 영어권 고객님들이 쉽게 접근할 수 있도록 영어 계정 생산이랑 번역 다 해드려요',
   },
   {
     icon: MessageSquare,
     title: '고객 관리',
-    desc: '영어권 고객님들의 예약, 문의, 리뷰 등 다양한 고객 관리는 저희가 다 해드려요, 사장님은 편하게 가게 운영만 하시면 돼요!',
+    desc: '영어 고객님들의 모든 문의 사항을 저희가 관리해드려요 사장님은 한국 고객들만 상대하면 돼요',
   },
 ];
 
@@ -40,10 +40,10 @@ export function Features() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-sm font-medium text-brand-green/80">핵심</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">
-            영어를 잘 못하셔도 괜찮아요! <br className="hidden sm:block" />
+            영어를 못하셔도 괜찮아요! <br className="hidden sm:block" />
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
-            성공적인 해외 마케팅을 위해 필요한 모든 것을 저희가 해드려요,
+            성공적인 해외 마케팅을 위해 필요한 모든 것을 저희가 도와드려요,
           </p>
         </div>
 

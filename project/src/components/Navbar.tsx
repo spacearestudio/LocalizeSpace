@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Globe, Menu, X } from 'lucide-react';
 
+{/*
 const links = [
   { label: 'Temp', href: '#features' },
   { label: 'Temp', href: '#pricing' },
   { label: 'Temp', href: '#' },
 ];
+*/}
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,6 +36,7 @@ export function Navbar() {
           <span>LocalizeSpace</span>
         </a>
 
+        {/*
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a
@@ -45,7 +48,10 @@ export function Navbar() {
             </a>
           ))}
         </div>
+        */}
 
+
+        {/*
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#"
@@ -61,6 +67,8 @@ export function Navbar() {
           </a>
         </div>
 
+        */}
+
         <button
           className="md:hidden p-2 -mr-2 text-slate-700"
           onClick={() => setOpen(!open)}
@@ -70,6 +78,7 @@ export function Navbar() {
         </button>
       </nav>
 
+      {/*
       {open && (
         <div className="md:hidden bg-white border-b border-slate-200">
           <div className="px-6 py-4 flex flex-col gap-4">
@@ -97,6 +106,7 @@ export function Navbar() {
           </div>
         </div>
       )}
+      */}
     </header>
   );
 }
