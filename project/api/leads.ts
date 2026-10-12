@@ -4,6 +4,10 @@
 // There is no database. The Discord message is the record, so if Discord can't be reached the visitor
 // sees an error and can try again, instead of the sign-up being silently lost.
 
+// Vercel provides `process` when the function runs. This line only tells your editor it exists,
+// so you don't need @types/node.
+declare const process: { env: Record<string, string | undefined> };
+
 type Req = { method?: string; body?: unknown };
 type Res = {
   status(code: number): Res;
@@ -32,7 +36,7 @@ export default async function handler(req: Req, res: Res) {
 
   let body: Record<string, unknown> = {};
   try {
-    const raw = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+    const raw: unknown = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     if (raw && typeof raw === 'object') body = raw as Record<string, unknown>;
   } catch {
     return fail(res, 400, 'bad_request', 'Invalid request.');
